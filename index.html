@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Odoo Developer Portfolio - Building scalable business systems.">
+    <title>Hamza Shehabu - Odoo Developer</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+
+    <header class="sticky top-0 z-30 border-b border-slate-200/70 bg-slate-50/90 backdrop-blur dark:border-slate-800/70 dark:bg-slate-950/90 transition-colors duration-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 gap-4">
+                <a href="#home" class="text-base font-semibold tracking-tight text-slate-900 dark:text-white micro-animation focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 rounded-lg outline-none">
+                    👨‍💻 Hamza Shehabu
+                </a>
+                <nav class="hidden md:flex items-center gap-6 text-sm text-slate-600 dark:text-slate-400">
+                    <a class="hover:text-slate-900 dark:hover:text-white micro-animation focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 rounded outline-none" href="#about">Bio</a>
+                    <a class="hover:text-slate-900 dark:hover:text-white micro-animation focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 rounded outline-none" href="#experience">Experience</a>
+                    <a class="hover:text-slate-900 dark:hover:text-white micro-animation focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 rounded outline-none" href="#projects">Projects</a>
+                    <a class="hover:text-slate-900 dark:hover:text-white micro-animation focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 rounded outline-none" href="#contact">Contact</a>
+                </nav>
+                <div class="flex items-center gap-3">
+                    <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                        <span class="theme-icon-sun hidden dark:block">☀️</span>
+                        <span class="theme-icon-moon block dark:hidden">🌙</span>
+                    </button>
+                    <a href="#contact" class="hidden sm:inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-slate-800 dark:bg-emerald-600 dark:hover:bg-emerald-500 micro-animation focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950 outline-none">
+                        Let’s Talk
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="home" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section class="py-16 sm:py-24">
+            <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+                <div class="space-y-6 reveal">
+                    <p class="inline-flex items-center gap-2 rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-400">
+                        Odoo Developer
+                    </p>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-slate-900 dark:text-white">
+                        Building calm, scalable business systems with Odoo.
+                    </h1>
+                    <p class="text-base sm:text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                        I design and implement reliable ERP solutions that streamline operations, connect teams, and make decision-making effortless. My focus is clarity, performance, and long-term maintainability.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#projects" class="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 dark:bg-emerald-600 dark:hover:bg-emerald-500 micro-animation focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950 outline-none">
+                            View Projects
+                        </a>
+                        <a href="#contact" class="inline-flex items-center justify-center rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 hover:border-slate-400 hover:text-slate-900 dark:border-slate-600 dark:text-slate-300 dark:hover:border-slate-500 dark:hover:text-white micro-animation focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 outline-none">
+                            Book a Call
+                        </a>
+                    </div>
+                    <div class="flex flex-wrap gap-3 text-xs text-slate-500 dark:text-slate-400">
+                        <span class="rounded-full border border-slate-200 bg-white px-3 py-1 dark:border-slate-700 dark:bg-slate-800">Odoo 16 • 19</span>
+                        <span class="rounded-full border border-slate-200 bg-white px-3 py-1 dark:border-slate-700 dark:bg-slate-800">Process Automation</span>
+                        <span class="rounded-full border border-slate-200 bg-white px-3 py-1 dark:border-slate-700 dark:bg-slate-800">Integration Architecture</span>
+                    </div>
+                </div>
+                <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm dark:border-slate-800 dark:bg-slate-900/50 reveal">
+                    <div class="space-y-6">
+                        <div class="space-y-2">
+                            <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">Core Focus</p>
+                            <h2 class="text-2xl font-semibold text-slate-900 dark:text-white">End-to-end ERP delivery</h2>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">
+                                From discovery to deployment, I structure Odoo projects that align with strategy, data, and day-to-day execution.
+                            </p>
+                        </div>
+                        <div class="grid gap-4 sm:grid-cols-2 text-sm text-slate-600 dark:text-slate-400">
+                            <div class="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 dark:border-slate-700 dark:bg-slate-800/50">
+                                <p class="font-semibold text-slate-900 dark:text-white">System Design</p>
+                                <p>Mapping flows, roles, and KPIs.</p>
+                            </div>
+                            <div class="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 dark:border-slate-700 dark:bg-slate-800/50">
+                                <p class="font-semibold text-slate-900 dark:text-white">Customization</p>
+                                <p>Python, XML, OWL, and server actions.</p>
+                            </div>
+                            <div class="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 dark:border-slate-700 dark:bg-slate-800/50">
+                                <p class="font-semibold text-slate-900 dark:text-white">Integration</p>
+                                <p>APIs, ETL, and data migration.</p>
+                            </div>
+                            <div class="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 dark:border-slate-700 dark:bg-slate-800/50">
+                                <p class="font-semibold text-slate-900 dark:text-white">Change Enablement</p>
+                                <p>Documentation and team onboarding.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 text-xs text-slate-500 dark:text-slate-400">
+                            <span class="flex items-center gap-2">
+                                <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+                                Available for new projects
+                            </span>
+                            <span>Based in Ethiopia · Remote</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 border-t border-slate-200/70 dark:border-slate-800/70">
+            <div class="grid gap-10 lg:grid-cols-3">
+                <div class="space-y-3 reveal">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">Bio</p>
+                    <h2 class="text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white">Builder mindset, architect approach.</h2>
+                </div>
+                <div class="lg:col-span-2 space-y-6 text-slate-600 dark:text-slate-400 reveal">
+                    <p class="text-base leading-relaxed">
+                        I help growing organizations turn complex operations into clear, connected workflows. My work combines discovery, data modeling, and pragmatic engineering so Odoo feels like a natural extension of the business.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="badge">Odoo</span>
+                        <span class="badge">Python</span>
+                        <span class="badge">PostgreSQL</span>
+                        <span class="badge">OWL</span>
+                        <span class="badge">XML/QWeb</span>
+                        <span class="badge">REST API</span>
+                        <span class="badge">Docker</span>
+                        <span class="badge">CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-16 border-t border-slate-200/70 dark:border-slate-800/70">
+            <div class="flex flex-col gap-10">
+                <div class="space-y-2 reveal">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">Experience</p>
+                    <h2 class="text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white">Journey so far.</h2>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 max-w-2xl">
+                        Roles and milestones that shaped how I build systems and deliver value.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-slate-200 via-slate-300 to-slate-200 dark:from-slate-700 dark:via-slate-600 dark:to-slate-700" aria-hidden="true"></div>
+                    <ul class="space-y-8">
+                        <li class="relative pl-12 reveal">
+                            <span class="absolute left-0 top-1.5 h-3 w-3 rounded-full border-2 border-emerald-500 bg-slate-50 dark:bg-slate-950 dark:border-emerald-400" aria-hidden="true"></span>
+                            <article class="experience-card">
+                                <div class="flex flex-wrap items-baseline justify-between gap-2">
+                                    <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Senior Odoo Developer</h3>
+                                    <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2024 — Present</span>
+                                </div>
+                                <p class="mt-1 text-sm font-medium text-emerald-700 dark:text-emerald-400">Websers Technology · Remote</p>
+                                <p class="mt-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                    Leading end-to-end Odoo implementations: discovery, customization, integration, and deployment. Focus on inventory, sales, purchase, and field service modules.
+                                </p>
+                                <div class="mt-4 flex flex-wrap gap-2">
+                                    <span class="chip">Odoo 16-19</span>
+                                    <span class="chip">Python</span>
+                                    <span class="chip">PostgreSQL</span>
+                                    <span class="chip">REST API</span>
+                                    <span class="chip">Docker</span>
+                                    <span class="chip">CI/CD</span>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="relative pl-12 reveal">
+                            <span class="absolute left-0 top-1.5 h-3 w-3 rounded-full border-2 border-emerald-500 bg-slate-50 dark:bg-slate-950 dark:border-emerald-400" aria-hidden="true"></span>
+                            <article class="experience-card">
+                                <div class="flex flex-wrap items-baseline justify-between gap-2">
+                                    <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Odoo Developer</h3>
+                                    <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2024</span>
+                                </div>
+                                <p class="mt-1 text-sm font-medium text-emerald-700 dark:text-emerald-400">Primecare Systems · Addis Ababa, Ethiopia</p>
+                                <p class="mt-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                    Custom modules, reports, and workflows. Worked closely with operations and finance teams to align Odoo with business processes.
+                                </p>
+                                <div class="mt-4 flex flex-wrap gap-2">
+                                    <span class="chip">Odoo 17-18</span>
+                                    <span class="chip">QWeb</span>
+                                    <span class="chip">OWL</span>
+                                    <span class="chip">REST API</span>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="relative pl-12 reveal">
+                            <span class="absolute left-0 top-1.5 h-3 w-3 rounded-full border-2 border-emerald-500 bg-slate-50 dark:bg-slate-950 dark:border-emerald-400" aria-hidden="true"></span>
+                            <article class="experience-card">
+                                <div class="flex flex-wrap items-baseline justify-between gap-2">
+                                    <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Software Developer</h3>
+                                    <span class="text-xs font-medium text-slate-500 dark:text-slate-400">2022 — 2023</span>
+                                </div>
+                                <p class="mt-1 text-sm font-medium text-emerald-700 dark:text-emerald-400">Debo Engineering · Remote</p>
+                                <p class="mt-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                    Full-stack and backend work.
+                                </p>
+                                <div class="mt-4 flex flex-wrap gap-2">
+                                    <span class="chip">PHP</span>
+                                    <span class="chip">MySQL</span>
+                                    <span class="chip">JavaScript</span>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-16 border-t border-slate-200/70 dark:border-slate-800/70">
+            <div class="flex flex-col gap-8">
+                <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 reveal">
+                    <div class="space-y-2">
+                        <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">Projects</p>
+                        <h2 class="text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white">Recent implementations.</h2>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">
+                            Selected work focused on operational clarity, automation, and reporting depth.
+                        </p>
+                    </div>
+                    <a href="#contact" class="text-sm font-semibold text-emerald-700 hover:text-emerald-800 dark:text-emerald-400 dark:hover:text-emerald-300 micro-animation focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 rounded outline-none">
+                        Request detailed case studies →
+                    </a>
+                </div>
+
+                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    <article class="project-card reveal">
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">Distribution</p>
+                                <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Multi-warehouse Operations</h3>
+                            </div>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">
+                                Designed Odoo inventory flows for a 3-region distribution network, aligning purchasing, stock moves, and quality checks.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-xs text-slate-500">
+                                <span class="chip">Inventory</span>
+                                <span class="chip">Purchase</span>
+                                <span class="chip">Barcode</span>
+                            </div>
+                        </div>
+                            <div class="pt-6 text-sm text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700">
+                                Outcome: 28% faster fulfillment, fewer stock discrepancies.
+                            </div>
+                        </article>
+
+                        <article class="project-card reveal">
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">Services</p>
+                                    <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Automated Field Service</h3>
+                                </div>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">
+                                Built service workflows, SLA tracking, and a mobile-ready technician flow that syncs with accounting and CRM.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-xs text-slate-500">
+                                <span class="chip">Field Service</span>
+                                <span class="chip">CRM</span>
+                                <span class="chip">Accounting</span>
+                            </div>
+                        </div>
+                                <div class="pt-6 text-sm text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700">
+                                    Outcome: 40% faster ticket resolution.
+                                </div>
+                            </article>
+
+                            <article class="project-card reveal">
+                                <div class="space-y-4">
+                                    <div>
+                                        <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">Manufacturing</p>
+                                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Production Planning Suite</h3>
+                                    </div>
+                                    <p class="text-sm text-slate-600 dark:text-slate-400">
+                                Implemented MRP workflows, BOM governance, and shop floor visibility with tailored dashboards.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-xs text-slate-500">
+                                <span class="chip">MRP</span>
+                                <span class="chip">BOM</span>
+                                <span class="chip">Dashboards</span>
+                            </div>
+                        </div>
+                                    <div class="pt-6 text-sm text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700">
+                                        Outcome: 18% reduction in production delays.
+                                    </div>
+                                </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 border-t border-slate-200/70 dark:border-slate-800/70">
+            <div class="grid gap-10 lg:grid-cols-2">
+                <div class="space-y-4 reveal">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">Contact</p>
+                    <h2 class="text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white">Let’s build a calmer system.</h2>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">
+                        Share your goals, timeline, and current stack. I respond within 1-2 business days.
+                    </p>
+                    <div class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
+                        <p><span class="font-semibold text-slate-900 dark:text-white">Email:</span> ibnushihab64@gmail.com</p>
+                        <p><span class="font-semibold text-slate-900 dark:text-white">Location:</span> Addis Ababa, Ethiopia (Remote-ready)</p>
+                        <p><span class="font-semibold text-slate-900 dark:text-white">Availability:</span> New projects starting next month</p>
+                    </div>
+                </div>
+                <form class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm dark:border-slate-800 dark:bg-slate-900/50 space-y-5 reveal" action="#" method="post">
+                    <div>
+                        <label class="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">Full Name</label>
+                        <input type="text" placeholder="Your name" class="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:placeholder:text-slate-500 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200 dark:focus:border-emerald-500 dark:focus:ring-emerald-500/30 transition-colors" />
+                    </div>
+                    <div>
+                        <label class="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">Email</label>
+                        <input type="email" placeholder="you@email.com" class="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:placeholder:text-slate-500 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200 dark:focus:border-emerald-500 dark:focus:ring-emerald-500/30 transition-colors" />
+                    </div>
+                    <div>
+                        <label class="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">Project Summary</label>
+                        <textarea rows="4" placeholder="Tell me about your workflow, goals, or pain points." class="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:placeholder:text-slate-500 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200 dark:focus:border-emerald-500 dark:focus:ring-emerald-500/30 transition-colors"></textarea>
+                    </div>
+                    <button type="submit" class="w-full rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 dark:bg-emerald-600 dark:hover:bg-emerald-500 micro-animation focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950 outline-none">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-200/70 dark:border-slate-800/70 py-8 transition-colors duration-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-slate-500 dark:text-slate-400 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <p>© 2026 Hamza Shehabu. Odoo Developer Portfolio.</p>
+            <div class="flex items-center gap-4">
+                <a class="hover:text-slate-700 dark:hover:text-slate-300 micro-animation focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950 rounded outline-none" href="#home">Back to top</a>
+                <span class="text-slate-300 dark:text-slate-600">•</span>
+                <a class="hover:text-slate-700 dark:hover:text-slate-300 micro-animation focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950 rounded outline-none" href="mailto:ibnushihab64@gmail.com">ibnushihab64@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            var STORAGE_KEY = 'portfolio-theme';
+            var html = document.documentElement;
+
+            function getPreferred() {
+                try { return localStorage.getItem(STORAGE_KEY); } catch (e) { return null; }
+            }
+            function setPreferred(value) {
+                try { localStorage.setItem(STORAGE_KEY, value); } catch (e) {}
+                if (value === 'dark') html.classList.add('dark'); else html.classList.remove('dark');
+            }
+
+            var preferred = getPreferred();
+            if (preferred === 'dark' || (!preferred && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches))
+                html.classList.add('dark');
+            else
+                html.classList.remove('dark');
+
+            document.getElementById('theme-toggle').addEventListener('click', function () {
+                var isDark = html.classList.toggle('dark');
+                setPreferred(isDark ? 'dark' : 'light');
+            });
+
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+                if (getPreferred()) return;
+                if (e.matches) html.classList.add('dark'); else html.classList.remove('dark');
+            });
+        })();
+
+        var revealElements = document.querySelectorAll('.reveal');
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        revealElements.forEach(function (el) { observer.observe(el); });
+    </script>
+</body>
+</html>

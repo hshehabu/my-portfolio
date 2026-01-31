@@ -1,10 +1,10 @@
 'use client'
 
-import { useFormState } from 'react-dom'
+import { useActionState } from 'react'
 import { submitContact } from '@/lib/actions/contact'
 
 export function ContactForm() {
-  const [state, formAction] = useFormState(submitContact, { ok: false, message: '' })
+  const [state, formAction] = useActionState(submitContact, { ok: false, message: '' })
 
   return (
     <form

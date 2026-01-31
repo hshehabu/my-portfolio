@@ -8,13 +8,14 @@ import { DeleteProjectButton } from './DeleteProjectButton'
 export default async function AdminProjectsPage({
   searchParams,
 }: {
-  searchParams?: { id?: string }
+  searchParams: Promise<{ id?: string }>
 }) {
   const supabase = await createServerSupabaseClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/admin/login')
-
-  const editId = searchParams?.id
+  
+  const params = await searchParams  
+  const editId = params?.id
   const items = await getProjects()
   const editItem = editId ? items.find((p) => p.id === editId) ?? null : null
 

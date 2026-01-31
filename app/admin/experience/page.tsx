@@ -8,13 +8,14 @@ import { DeleteExperienceButton } from './DeleteExperienceButton'
 export default async function AdminExperiencePage({
   searchParams,
 }: {
-  searchParams?: { id?: string }
+  searchParams?: Promise<{ id?: string }>
 }) {
   const supabase = await createServerSupabaseClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/admin/login')
 
-  const editId = searchParams?.id
+  const params = await searchParams
+  const editId = params?.id
   const items = await getExperience()
   const editItem = editId ? items.find((e) => e.id === editId) ?? null : null
 

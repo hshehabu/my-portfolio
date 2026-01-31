@@ -15,9 +15,6 @@ export function Projects({ items }: Props) {
               Selected work focused on operational clarity, automation, and reporting depth.
             </p>
           </div>
-          <Link href="#contact" className="text-sm font-semibold text-emerald-700 hover:text-emerald-800 dark:text-emerald-400 dark:hover:text-emerald-300 micro-animation focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 rounded outline-none">
-            Request detailed case studies →
-          </Link>
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {items.map((proj) => (

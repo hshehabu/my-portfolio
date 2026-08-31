@@ -4,8 +4,8 @@ import { ThemeProvider } from '@/components/ThemeProvider'
 import { RevealScript } from '@/components/RevealScript'
 
 export const metadata: Metadata = {
-  title: 'Odoo Developer Portfolio',
-  description: 'Odoo Developer Portfolio - Building scalable business systems.',
+  title: 'Hamza Shehabu | Senior Odoo Developer',
+  description: 'Hamza Shehabu | Senior Odoo Developer | Building scalable business systems.',
 }
 
 export default function RootLayout({

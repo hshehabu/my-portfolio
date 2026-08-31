@@ -4,8 +4,8 @@ import type { Profile, Bio, Experience, Project, ContactSettings } from '@/lib/t
 const defaultProfile: Profile = {
   id: '',
   name: 'Hamza Shehabu',
-  title: 'Odoo Developer',
-  hero_badge: 'Odoo Developer',
+  title: 'Senior Odoo Developer',
+  hero_badge: 'Senior Odoo Developer',
   hero_headline: 'Building calm, scalable business systems with Odoo.',
   hero_description: 'I design and implement reliable ERP solutions that streamline operations, connect teams, and make decision-making effortless. My focus is clarity, performance, and long-term maintainability.',
   hero_tags: ['Odoo 16 • 19', 'Process Automation', 'Integration Architecture'],

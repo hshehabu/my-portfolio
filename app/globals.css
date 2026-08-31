@@ -5,28 +5,38 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    @apply transition-colors duration-500 ease-out;
   }
   body {
-    @apply antialiased text-slate-800 bg-slate-50 dark:text-slate-200 dark:bg-slate-950 transition-colors duration-500 ease-out;
+    @apply antialiased;
+    color: #374151;
+    background-color: #FFFFFF;
   }
 }
 
 @layer components {
   .badge {
-    @apply rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300;
+    @apply rounded-md border bg-white px-3 py-1 text-xs font-medium;
+    border-color: rgba(157, 150, 142, 0.3);
+    color: #374151;
   }
   .chip {
-    @apply rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600 dark:bg-slate-800 dark:text-slate-300;
+    @apply rounded-md bg-slate-50 px-2.5 py-1 text-xs font-medium border;
+    border-color: rgba(157, 150, 142, 0.2);
+    color: #374151;
   }
   .project-card {
-    @apply rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-md dark:border-slate-800 dark:bg-slate-900/50 dark:shadow-slate-950/20 hover:dark:shadow-emerald-500/5;
+    @apply rounded-lg border bg-white p-6 transition-all duration-300 ease-in-out;
+    border-color: rgba(157, 150, 142, 0.3);
+  }
+  .project-card:hover {
+    border-color: rgba(113, 75, 103, 0.5);
   }
   .experience-card {
-    @apply rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-300 ease-in-out hover:border-emerald-200 hover:shadow-md dark:border-slate-800 dark:bg-slate-900/50 dark:hover:border-emerald-800/50;
+    @apply rounded-lg border bg-white p-6 transition-all duration-300 ease-in-out;
+    border-color: rgba(157, 150, 142, 0.3);
   }
-  .theme-toggle {
-    @apply relative flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-600 transition-all duration-300 hover:border-slate-300 hover:text-slate-900 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-400 dark:hover:border-slate-600 dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950;
+  .experience-card:hover {
+    border-color: rgba(113, 75, 103, 0.5);
   }
 }
 
@@ -39,5 +49,37 @@
   }
   .reveal.is-visible {
     @apply opacity-100 translate-y-0;
+  }
+  .odoo-highlight-yellow {
+    @apply relative inline-block z-10;
+  }
+  .odoo-highlight-yellow::after {
+    content: '';
+    @apply absolute -bottom-1 -left-2 -right-2 top-2 -z-10 rounded-sm origin-left transform -rotate-1;
+    background-color: rgba(251, 191, 36, 0.9);
+  }
+  .odoo-highlight-pink {
+    @apply relative inline-block z-10;
+  }
+  .odoo-highlight-pink::after {
+    content: '';
+    @apply absolute -bottom-0 -left-1 -right-1 top-4 -z-10 rounded-sm origin-left transform rotate-1;
+    background-color: rgba(244, 63, 94, 0.8);
+  }
+  .odoo-underline-blue {
+    @apply relative inline-block;
+  }
+  .odoo-underline-blue::after {
+    content: '';
+    @apply absolute -bottom-2 left-0 right-0 h-1.5 rounded-full transform -rotate-1;
+    background-color: #0EA5E9;
+  }
+  .odoo-underline-teal {
+    @apply relative inline-block;
+  }
+  .odoo-underline-teal::after {
+    content: '';
+    @apply absolute -bottom-1 left-0 right-0 h-1 rounded-full transform rotate-1;
+    background-color: #0D9488;
   }
 }

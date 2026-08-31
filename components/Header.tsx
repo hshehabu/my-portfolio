@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { ThemeToggle } from './ThemeToggle'
 
 type Props = {
   name: string
@@ -7,26 +6,34 @@ type Props = {
 
 export function Header({ name }: Props) {
   return (
-    <header className="sticky top-0 z-30 border-b border-slate-200/70 bg-slate-50/90 backdrop-blur dark:border-slate-800/70 dark:bg-slate-950/90 transition-colors duration-500">
+    <header className="sticky top-0 z-30 bg-white border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 gap-4">
+        <div className="flex items-center justify-between h-[60px] gap-4">
           <Link
             href="#home"
-            className="text-base font-semibold tracking-tight text-slate-900 dark:text-white micro-animation focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 rounded-lg outline-none"
+            className="text-[22px] font-bold tracking-tight text-[#714B67] hover:text-[#5b3b53] transition-colors outline-none flex items-center gap-2"
           >
-            👨‍💻 {name}
+            <span className="w-6 h-6 rounded bg-[#714B67] text-white flex items-center justify-center text-xs">👨‍💻</span>
+            {name}
           </Link>
-          <nav className="hidden md:flex items-center gap-6 text-sm text-slate-600 dark:text-slate-400">
-            <Link className="hover:text-slate-900 dark:hover:text-white micro-animation focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 rounded outline-none" href="#about">Bio</Link>
-            <Link className="hover:text-slate-900 dark:hover:text-white micro-animation focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 rounded outline-none" href="#experience">Experience</Link>
-            <Link className="hover:text-slate-900 dark:hover:text-white micro-animation focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 rounded outline-none" href="#projects">Projects</Link>
-            <Link className="hover:text-slate-900 dark:hover:text-white micro-animation focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 rounded outline-none" href="#contact">Contact</Link>
+          
+          <nav className="hidden md:flex items-center gap-8 text-[15px] font-medium text-slate-600">
+            <Link className="hover:text-slate-900 transition-colors outline-none" href="#about">Bio</Link>
+            <Link className="hover:text-slate-900 transition-colors outline-none" href="#experience">Experience</Link>
+            <Link className="hover:text-slate-900 transition-colors outline-none" href="#projects">Projects</Link>
+            <Link className="hover:text-slate-900 transition-colors outline-none" href="#contact">Contact</Link>
           </nav>
-          <div className="flex items-center gap-3">
-            <ThemeToggle />
+          
+          <div className="flex items-center gap-4 text-[15px] font-medium">
+            <Link
+              href="/admin/login"
+              className="hidden sm:inline-block text-slate-600 hover:text-slate-900 transition-colors"
+            >
+              Sign in
+            </Link>
             <Link
               href="#contact"
-              className="hidden sm:inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-slate-800 dark:bg-emerald-600 dark:hover:bg-emerald-500 micro-animation focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950 outline-none"
+              className="inline-flex items-center justify-center rounded bg-[#714B67] px-4 py-2 text-white hover:bg-[#5b3b53] transition-colors outline-none"
             >
               Let’s Talk
             </Link>

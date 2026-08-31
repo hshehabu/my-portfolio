@@ -13,7 +13,6 @@ export function Header({ name }: Props) {
             href="#home"
             className="text-[22px] font-bold tracking-tight text-[#714B67] hover:text-[#5b3b53] transition-colors outline-none flex items-center gap-2"
           >
-            <span className="w-6 h-6 rounded bg-[#714B67] text-white flex items-center justify-center text-xs">👨‍💻</span>
             {name}
           </Link>
           
@@ -25,12 +24,6 @@ export function Header({ name }: Props) {
           </nav>
           
           <div className="flex items-center gap-4 text-[15px] font-medium">
-            <Link
-              href="/admin/login"
-              className="hidden sm:inline-block text-slate-600 hover:text-slate-900 transition-colors"
-            >
-              Sign in
-            </Link>
             <Link
               href="#contact"
               className="inline-flex items-center justify-center rounded bg-[#714B67] px-4 py-2 text-white hover:bg-[#5b3b53] transition-colors outline-none"
